@@ -1,0 +1,15 @@
+#6 Minimum and Maximum but with Loops
+#For both minimum and maximum, write one function to manually
+#find that value using a for loop and another to manually find
+#it using a while loop. You may not use min() or max(). In 
+#total you should have written 4 functions.
+L = eval(input('12 , 234 , 56'))
+small = L[0]
+large = L[0]
+for num in L:
+    if num < small:
+        small = num
+    if num > large:
+        large = num
+print("largest:", large)
+print("smallest:", small)

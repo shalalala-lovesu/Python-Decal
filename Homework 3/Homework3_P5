@@ -1,0 +1,26 @@
+#5 Rotating Digits
+#Implement a function called rotate digits that takes an 
+#integer n as input and rotates its digits to the right by one
+#position. For example, given the input 12345, the function 
+#should return 51234. You may *not* convert the input to a 
+#string but you can use properties of a string in your answer.
+#Hint: Use modulus (%) and floor division (//).
+#Ex: 12345 % 10 = 5 and 12345 // 10 = 1234
+def number(A):
+    digit = 0
+    while (A > 0):
+        digit += 1
+        A //= 10
+    return digit
+def rotating_numbers( A, Y):
+    X = number(A)
+    Y = ((Y % X)+ X) % X
+    left_no = A// pow(10, X- Y)
+    X = X % pow(10, X-Y)
+    left_number = number(left_no)
+    A = A* pow(10, left_number) + left_no
+    print (A)
+    A, Y = 34576, 8
+    print(rotating_numbers)
+#I try to use a similar format to geeksforgeek.com
+#program, but I still can't figure in out.

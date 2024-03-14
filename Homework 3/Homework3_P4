@@ -1,0 +1,7 @@
+#4 Calculate BMI (Body Mass Index)
+#Write a function that takes a person’s weight (in kilograms) 
+#and height (inmeters) as input and returns their BMI.
+def BMI(weight, height):
+    result = weight/ (height**2)
+    return result
+print(BMI(60.7,1.53))

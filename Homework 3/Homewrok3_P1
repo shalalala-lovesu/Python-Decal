@@ -1,0 +1,9 @@
+#1) power of number: Write a function to compute the value 
+#of x raised to the power y without
+#using the built-in pow or ** operator.
+def exponent( x, y):
+    answer = 1
+    for index in range (x):
+        answer = answer * y
+    return answer
+print(exponent(2,4))
